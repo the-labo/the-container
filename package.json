@@ -1,6 +1,6 @@
 {
   "name": "the-container",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Container of the-components",
   "main": "shim",
   "scripts": {
@@ -31,12 +31,12 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "prop-types": "^15.5.8",
-    "the-style": "^1.1.2"
+    "the-style": "^1.1.4"
   },
   "devDependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "the-script-build": "^1.2.2",
+    "the-script-build": "^1.2.4",
     "the-script-doc": "^1.0.1",
     "the-script-release": "^1.0.4",
     "the-script-share": "^1.0.5",
