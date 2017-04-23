@@ -1,0 +1,55 @@
+{
+  "name": "the-container",
+  "version": "1.0.0",
+  "description": "Container of the-components",
+  "main": "shim",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-doc",
+    "prepare": "the-script-build && the-script-doc",
+    "release": "the-script-release -y",
+    "share": "the-script-share",
+    "test": "the-script-test",
+    "update": "the-script-update",
+    "watch": "the-script-build -w"
+  },
+  "repository": "the-labo/the-container",
+  "keywords": [
+    "the",
+    "react-component"
+  ],
+  "author": {
+    "name": "Taka Okunishi",
+    "email": "okunishinishi@gmail.com",
+    "url": "http://okunishitaka.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/the-labo/the-container/issues"
+  },
+  "homepage": "https://github.com/the-labo/the-container#readme",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.8",
+    "the-style": "^1.1.2"
+  },
+  "devDependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "the-script-build": "^1.2.2",
+    "the-script-doc": "^1.0.1",
+    "the-script-release": "^1.0.4",
+    "the-script-share": "^1.0.5",
+    "the-script-test": "^1.0.1",
+    "the-script-update": "^1.0.0",
+    "the-templates": "^1.0.2"
+  },
+  "peerDependencies": {
+    "react": ">=15",
+    "react-dom": ">=15"
+  },
+  "engines": {
+    "node": ">=6",
+    "npm": ">=4"
+  }
+}
