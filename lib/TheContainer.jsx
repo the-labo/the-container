@@ -28,6 +28,8 @@ class TheContainer extends React.PureComponent {
 
 }
 
+TheContainer.Style = TheContainerStyle
+
 TheContainer.propTypes = {}
 
 TheContainer.defaultProps = {}
