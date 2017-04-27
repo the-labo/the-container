@@ -1,16 +1,16 @@
 'use strict'
 
 import React from 'react'
-import TheContainer from 'the-container'
-
-const TheContainerStyles = TheContainer.styles({})
+import { TheContainer, TheContainerStyle } from 'the-container'
 
 class ExampleComponent extends React.PureComponent {
   render () {
     return (
-      <TheContainer id='my-component'
-                        styles={ TheContainerStyles }
-      />
+      <div>
+        <TheContainerStyle />
+        <TheContainer id='my-component'
+        />
+      </div>
     )
   }
 }

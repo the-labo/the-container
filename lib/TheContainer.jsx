@@ -3,7 +3,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
-import TheStyle from 'the-style'
+import TheContainerStyle from './TheContainerStyle'
+import { htmlAttributesFor } from 'the-component-util'
 
 /**
  * Container of the-components
@@ -13,54 +14,23 @@ class TheContainer extends React.PureComponent {
     const s = this
     const { props } = s
     let {
-      id,
       className,
-      styles,
       children
     } = props
     return (
-      <div className={ classnames('the-container', className) }
-           style={ styles.root }
-           { ...{ id }}
+      <div { ...htmlAttributesFor(props, { except: [ 'className' ] }) }
+           className={ classnames('the-container', className) }
       >
         { children }
       </div>
     )
   }
 
-  /**
-   * Define style
-   * @param [options={}] options - Optional settings
-   * @returns {Object} Style object
-   */
-  static styles (options = {}) {
-    const { theme } = TheStyle
-    let {
-      maxWidth = theme.CONTAINER_WIDTH
-    } = options
-    return {
-      root: {
-        maxWidth,
-        margin: '0 auto'
-      }
-    }
-  }
 }
 
-TheContainer.propTypes = {
-  /** CSS class name */
-  className: PropTypes.string,
-  /** Style objects */
-  styles: PropTypes.object,
-  /** DOM Id */
-  id: PropTypes.string
-}
+TheContainer.propTypes = {}
 
-TheContainer.defaultProps = {
-  className: null,
-  styles: TheContainer.styles({}),
-  id: null
-}
+TheContainer.defaultProps = {}
 
 TheContainer.displayName = 'TheContainer'
 

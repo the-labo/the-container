@@ -5,9 +5,11 @@
 'use strict'
 
 import TheContainer from './TheContainer'
+import TheContainerStyle from './TheContainerStyle'
 
 export default TheContainer
 
 export {
-  TheContainer
+  TheContainer,
+  TheContainerStyle
 }
