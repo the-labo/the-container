@@ -8,7 +8,7 @@ import TheStyle from 'the-style'
 /** Style for TheContainer */
 const TheContainerStyle = ({ id, className, options }) => (
   <TheStyle { ...{ id } }
-            className={ classnames('te-body-style', className) }
+            className={ classnames('the-container-style', className) }
             styles={ TheContainerStyle.data(options) }
   />
 )
