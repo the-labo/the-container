@@ -107,10 +107,7 @@ Components
 
 Container of the-components
 
-**Props**
 
-| Name | Type | Description | Default |
-| --- | --- | ---- | ---- |
 ### TheContainerStyle
 
 Style for TheContainer
@@ -120,6 +117,7 @@ Style for TheContainer
 | Name | Type | Description | Default |
 | --- | --- | ---- | ---- |
 | `options` | object  | Style options | `{}` |
+
 
 
 <!-- Section from "doc/guides/03.Components.md.hbs" End -->
