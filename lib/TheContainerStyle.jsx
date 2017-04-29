@@ -24,9 +24,9 @@ TheContainerStyle.defaultProps = {
 }
 
 TheContainerStyle.data = (options) => {
-  const { theme } = TheStyle
+  const { ThemeValues } = TheStyle
   let {
-    containerWidth = theme.CONTAINER_WIDTH
+    containerWidth = ThemeValues.containerWidth
   } = options
   return {
     '.the-container': {
