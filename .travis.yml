@@ -3,7 +3,6 @@ node_js:
 - '6'
 install:
 - npm install
-- npm ls
 script:
 - npm run build
 - npm run doc
