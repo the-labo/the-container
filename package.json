@@ -1,6 +1,6 @@
 {
   "name": "the-container",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "Container of the-components",
   "main": "shim",
   "scripts": {
