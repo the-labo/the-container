@@ -30,7 +30,7 @@ TheContainerStyle.data = (options) => {
   } = options
   return {
     '.the-container': {
-      width: containerWidth,
+      maxWidth: containerWidth,
       margin: '0 auto'
     }
   }
