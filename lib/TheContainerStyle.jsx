@@ -2,14 +2,14 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import classnames from 'classnames'
+import c from 'classnames'
 import TheStyle from 'the-style'
 
 /** Style for TheContainer */
-const TheContainerStyle = ({ id, className, options }) => (
-  <TheStyle { ...{ id } }
-            className={ classnames('the-container-style', className) }
-            styles={ TheContainerStyle.data(options) }
+const TheContainerStyle = ({id, className, options}) => (
+  <TheStyle {...{id}}
+            className={c('the-container-style', className)}
+            styles={TheContainerStyle.data(options)}
   />
 )
 
@@ -24,8 +24,8 @@ TheContainerStyle.defaultProps = {
 }
 
 TheContainerStyle.data = (options) => {
-  const { ThemeValues } = TheStyle
-  let {
+  const {ThemeValues} = TheStyle
+  const {
     containerWidth = ThemeValues.containerWidth
   } = options
   return {
