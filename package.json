@@ -1,6 +1,6 @@
 {
   "name": "the-container",
-  "version": "2.0.12",
+  "version": "3.0.0",
   "description": "Container of the-components",
   "main": "shim",
   "scripts": {
@@ -30,9 +30,9 @@
   "homepage": "https://github.com/the-labo/the-container#readme",
   "dependencies": {
     "classnames": "^2.2.5",
-    "prop-types": "^15.5.8",
-    "the-component-util": "^1.3.0",
-    "the-style": "^1.2.2"
+    "prop-types": "^15.6.0",
+    "the-component-util": "^1.5.1",
+    "the-style": "^2.0.0"
   },
   "devDependencies": {
     "react": "^15.5.4",
@@ -41,16 +41,16 @@
     "the-script-doc": "^1.0.2",
     "the-script-release": "^1.0.6",
     "the-script-share": "^1.0.5",
-    "the-script-test": "^1.0.1",
+    "the-script-test": "^2.0.1",
     "the-script-update": "^1.0.0",
-    "the-templates": "^1.0.7"
+    "the-templates": "^2.0.0"
   },
   "peerDependencies": {
-    "react": ">=15",
-    "react-dom": ">=15"
+    "react": ">=16",
+    "react-dom": ">=16"
   },
   "engines": {
-    "node": ">=6",
+    "node": ">=8",
     "npm": ">=4"
   }
 }
