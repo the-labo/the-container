@@ -3,7 +3,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import c from 'classnames'
-import TheStyle from 'the-style'
+import { TheStyle } from 'the-style'
 
 /** Style for TheContainer */
 const TheContainerStyle = ({id, className, options}) => (
