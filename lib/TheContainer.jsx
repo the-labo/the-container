@@ -1,10 +1,10 @@
 'use strict'
 
-import React from 'react'
-import PropTypes from 'prop-types'
 import c from 'classnames'
-import TheContainerStyle from './TheContainerStyle'
+import PropTypes from 'prop-types'
+import React from 'react'
 import { htmlAttributesFor } from 'the-component-util'
+import TheContainerStyle from './TheContainerStyle'
 
 /**
  * Container of the-components
@@ -14,8 +14,8 @@ class TheContainer extends React.Component {
     const s = this
     const {props} = s
     const {
+      children,
       className,
-      children
     } = props
     return (
       <div {...htmlAttributesFor(props, {except: ['className']})}

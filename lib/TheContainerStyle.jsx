@@ -1,12 +1,12 @@
 'use strict'
 
-import React from 'react'
-import PropTypes from 'prop-types'
 import c from 'classnames'
+import PropTypes from 'prop-types'
+import React from 'react'
 import { TheStyle } from 'the-style'
 
 /** Style for TheContainer */
-const TheContainerStyle = ({id, className, options}) => (
+const TheContainerStyle = ({className, id, options}) => (
   <TheStyle {...{id}}
             className={c('the-container-style', className)}
             styles={TheContainerStyle.data(options)}
@@ -16,23 +16,23 @@ const TheContainerStyle = ({id, className, options}) => (
 TheContainerStyle.displayName = 'TheContainerStyle'
 TheContainerStyle.propTypes = {
   /** Style options */
-  options: PropTypes.object
+  options: PropTypes.object,
 }
 
 TheContainerStyle.defaultProps = {
-  options: {}
+  options: {},
 }
 
 TheContainerStyle.data = (options) => {
   const {ThemeValues} = TheStyle
   const {
-    containerWidth = ThemeValues.containerWidth
+    containerWidth = ThemeValues.containerWidth,
   } = options
   return {
     '.the-container': {
+      margin: '0 auto',
       maxWidth: containerWidth,
-      margin: '0 auto'
-    }
+    },
   }
 }
 
