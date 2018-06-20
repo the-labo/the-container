@@ -11,8 +11,7 @@ import TheContainerStyle from './TheContainerStyle'
  */
 class TheContainer extends React.Component {
   render () {
-    const s = this
-    const {props} = s
+    const {props} = this
     const {
       children,
       className,
