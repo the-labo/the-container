@@ -20,7 +20,7 @@
     "@babel/runtime": "^7.0.0-beta.51",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "the-script-build": "^3.1.15",
+    "the-script-build": "^3.1.16",
     "the-script-doc": "^1.0.2",
     "the-script-release": "^1.0.6",
     "the-script-share": "^1.0.5",
